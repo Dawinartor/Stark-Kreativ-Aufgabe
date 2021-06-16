@@ -1,0 +1,148 @@
+body {
+    margin: 0; /* Bewirkt, dass es keinen Rand mehr gibt */
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+.top-bar a {
+    display: block;
+    color: #123676;
+    background: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.core-bar > div {
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.core-bar a {
+    display: block;
+    color: #123676;
+    background: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+.attention-icon {
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.Logo {
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div { /* Alle Divs welche sich im Flex-Container befinden */
+    margin: auto;
+    padding: auto;
+    font-size: 15px;
+}
+
+/*  ** Leere Platzhalter um das Scrollem zu simulieren ** */
+.EmptyBlock {
+    background: #8C8;
+    height: 2500px;
+}
+/* ** Leere Platzhalter um das Scrollem zu simulieren ** */
+
+
+
+#attention-bar {
+    background: #FFEB00;
+    height: attention-text; /* Die Höhe des Paragraphen wird genommen */
+}
+
+
+#leftAttention {
+    background: url(Elemente/attention.svg);
+    background-repeat: no-repeat;
+}
+
+
+#rigtCross {
+    background: url(Elemente/cross.svg);
+    background-repeat: no-repeat;
+}
+
+
+#navbar {
+    /* Das wird Sticky werden */
+}
+
+#leftCircle {
+    background: url(Elemente/logo.svg);
+    
+}
+
+
+#first {
+    background:  #b10f0f;
+    height: 75px;
+}
+
+#second {
+    background:  #0bdda8;
+    height: 75px;
+}
+
+#third {
+    background:  #a1fa12;
+    height: 75px;
+}
+
+.options-gallery {
+    background: #FAFAFA;
+    margin-bottom: 30px;
+    counter-reset: gallery-cell;
+  }
+  
+  .option {
+    width: 100%;
+    height: 160px;
+    margin-right: 20px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  .option:before {
+    content: counter(gallery-cell);
+    display: block;
+    text-align: center;
+    line-height: 160px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .gallery-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  

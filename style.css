@@ -12,11 +12,11 @@ ul {
 }
 
 li {
-    float: right;
+     float: right;
 }
 
 .top-bar a {
-    display: block;
+    display: flex;
     color: #123676;
     background: white;
     text-align: center;
@@ -42,12 +42,6 @@ li {
     font-weight: bolder;
   }
 
-.attention-icon {
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 15px;
-}
-
 .Logo {
     background-repeat: no-repeat;
     width: 30px;
@@ -64,6 +58,24 @@ li {
     font-size: 15px;
 }
 
+.core-bar {
+    display: flex;
+}
+
+.CoreBar {
+    display: flex;
+    height: ui;
+}
+
+.CircleDiv {
+    width: 50%;
+}
+
+.HrefDiv {
+    width: 50%;
+}
+
+
 /*  ** Leere Platzhalter um das Scrollem zu simulieren ** */
 .EmptyBlock {
     background: #8C8;
@@ -71,6 +83,11 @@ li {
 }
 /* ** Leere Platzhalter um das Scrollem zu simulieren ** */
 
+.attention-icon {
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
 
 
 #attention-bar {
@@ -81,23 +98,17 @@ li {
 
 #leftAttention {
     background: url(Elemente/attention.svg);
-    background-repeat: no-repeat;
 }
 
 
 #rigtCross {
     background: url(Elemente/cross.svg);
-    background-repeat: no-repeat;
 }
 
-
-#navbar {
-    /* Das wird Sticky werden */
-}
 
 #leftCircle {
     background: url(Elemente/logo.svg);
-    
+    float: left;
 }
 
 

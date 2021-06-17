@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 li {
@@ -25,28 +25,35 @@ li {
     font-size: 11px;
 }
 
-.core-bar > div {
-    display: flex;
+.CoreBar > div {
     margin: auto;
-    padding: auto;
 }
 
-.core-bar a {
-    display: block;
-    color: #123676;
-    background: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bolder;
-  }
+.CircleDiv {
+    width: 50%;
+    display: flex;
+}
 
 .Logo {
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
 }
+
+.HrefDiv {
+    width: 50%;
+}
+
+.HrefDiv a {
+    display: flex;
+    color: #123676;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+  }
 
 .flex-container {
     display: flex;
@@ -58,27 +65,30 @@ li {
     font-size: 15px;
 }
 
-.core-bar {
-    display: flex;
+.TopDiv {
+    border-bottom-style: solid;
 }
 
 .CoreBar {
     display: flex;
-    height: ui;
+    margin: auto;
+    padding: auto;
+}
+
+.Space {
+    width: 0.5%;
 }
 
 .CircleDiv {
-    width: 50%;
+    display: flex;
+    width: 49.5%;
 }
 
-.HrefDiv {
-    width: 50%;
-}
 
 
 /*  ** Leere Platzhalter um das Scrollem zu simulieren ** */
 .EmptyBlock {
-    background: #8C8;
+    background: rgb(14, 236, 225);
     height: 2500px;
 }
 /* ** Leere Platzhalter um das Scrollem zu simulieren ** */
@@ -89,6 +99,9 @@ li {
     height: 15px;
 }
 
+#waterImage {
+    height: 50px;
+}
 
 #attention-bar {
     background: #FFEB00;
@@ -108,52 +121,4 @@ li {
 
 #leftCircle {
     background: url(Elemente/logo.svg);
-    float: left;
 }
-
-
-#first {
-    background:  #b10f0f;
-    height: 75px;
-}
-
-#second {
-    background:  #0bdda8;
-    height: 75px;
-}
-
-#third {
-    background:  #a1fa12;
-    height: 75px;
-}
-
-.options-gallery {
-    background: #FAFAFA;
-    margin-bottom: 30px;
-    counter-reset: gallery-cell;
-  }
-  
-  .option {
-    width: 100%;
-    height: 160px;
-    margin-right: 20px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-  }
-  
-  .option:before {
-    content: counter(gallery-cell);
-    display: block;
-    text-align: center;
-    line-height: 160px;
-    font-size: 80px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .gallery-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
